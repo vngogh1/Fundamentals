@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Your information...</legend>
+            <div>
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your first name here">
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name here">
+            </div>
+            <div>
+                <label for="emailAddress">Email:</label>
+                <input type="text" name="emailAddress" id="emailAddress" placeholder="Enter your email here">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="7+ characters">
+            </div>
+            <div>
+                <label for=confPassword">Password:</label>
+                <input type="password" name="confPassword" id="confPassword" placeholder="Retype your password">
+            </div>
+            <div>
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" id="birthday" >
+            </div>
+            <fieldset>
+                <legend>Gender Identity</legend>
+                <input type="radio" name="gender" id ="gender1" value="Female">
+                <label for="gender1">Female</label>
+                <input type="radio" name="gender" id ="gender2" value="Male">
+                <label for="gender2">Male</label>
+                <input type="radio" name="gender" id ="gender3" value="Non-Binary">
+                <label for="gender3">Non-Binary</label>
+                <input type="radio" name="gender" id ="gender4" value="I prefer not to answer">
+                <label for="gender4">I prefer not to say</label>
+            </fieldset>
+            <div>
+                <label for="story">A short description about yourself:</label><br>
+                <textarea id="story" name="story"rows="4" cols="33">
+                Call me Ishmeal...
+                </textarea>            
+            </div>
+            <div>
+                <label for="lang">Favorite Language:</label>
+                <select for="lang" name="lang" id="lang">
+                    <option value="Javascript">Javascript</option>
+                    <option value="Javascript">Python</option>
+                    <option value="Javascript">CSS</option>
+                    <option value="Javascript">HTML</option>
+                    <option value="Javascript">Basic</option>
+                </select>
+            </div>
+            <div>
+                <label for="favColor">Favorite Color</label>
+                <input list="colors" type="text" name="favColor" id="favColor">
+                <datalist id="colors">
+                    <option value="Red"></option>
+                    <option value="Maroon"></option>
+                    <option value="Alizarin Crimson"></option>
+                    <option value="Cerulean Blue"></option>
+                    <option value="Cobalt Blue"></option>
+                    <option value="Cadmium Orange"></option>
+                    <option value="Payne's Grey"></option>
+                </datalist>
+            </div>
+            <div>
+                <input type="checkbox" name="signUp" id="signUp" checked>
+                <label for="signUp">Yes, I would like to receive periodic email updates</label>
+            </div>
+
+        </fieldset>
+
+<input type="submit" value="Create Account">
+    </form>
+    
+</body>
+</html>
