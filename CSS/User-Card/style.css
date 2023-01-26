@@ -1,0 +1,81 @@
+* {
+    padding:0;
+    margin:0;
+    border:0;
+    font:16px;
+    font-family: 'Roboto'; sans;
+    
+}
+
+body {
+    background-color: #202020;
+}
+
+.card {
+    background-color: rgb(53, 53, 53);
+    /* border-width: 10px;
+    border-color:#4b5048 ; */
+    width:50rem;
+    height:30rem;
+    margin:4rem auto;
+    box-shadow: 5px 32px 36px 0px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 5px 32px 36px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 32px 36px 0px rgba(0,0,0,0.41);
+}
+
+.banner{
+    top: 0px;
+    height: 5rem;
+    display: flex;
+    border-bottom: solid 2rem #786f0b;
+    
+}
+.content{
+    position: relative;
+    top: -4.75rem;
+    margin-left: 2rem;
+    width:200px;
+    color: #fff;
+
+
+}
+h1 {
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    
+    
+
+}
+p{
+    font-family: 'Roboto';
+}
+
+
+
+.mod {
+
+}
+img.profile {
+    width: 12.5rem;
+}
+img.icon {
+height:1rem;
+margin-right: .25rem;
+}
+
+button{
+    background-color: #e1d015;
+    color: rgb(53, 53, 53);
+    width: 12.5rem;
+    height: 4.75rem;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.2rem;
+    padding: .5rem;
+    margin-top: 3rem;
+}
+
+
+
+
