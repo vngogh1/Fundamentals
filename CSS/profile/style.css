@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 16px;
 }
+
 body {
     background-color: rgb(219, 219, 219);
     font-family: 'Balsamiq Sans', cursive;
@@ -12,30 +12,27 @@ body {
 .container {
     width: 800px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between ;
 }
 
-
-/* =========== NAVIGATION ============ */
+/* ================= NAVIGATION ============ */
 header {
     background-color: rgb(0, 0, 0);
 }
-.container {
-    display: flex;
-    justify-content: space-between ;
-    
-}
+
 nav.container {
-    background-color: rgb(0, 0, 0);
     color: #fff;
     align-items: center;
-    
 }
+
 .nav-lt {
     display: flex;
     margin: 1rem 0;
     gap: 2rem;
     align-items: center;
 }
+
 .nav-lt p {
     font-size: 1.5rem;
     font-weight: bold;
@@ -46,10 +43,12 @@ nav.container {
     list-style: none;
     gap: 2rem;
 }
+
 .nav-lt a {
     text-decoration: none;
     color: #fff;
 }
+
 .nav-lt a:hover {
     text-decoration: underline;
     color:rgb(1, 170, 196);
@@ -65,7 +64,7 @@ nav.container button {
 
 nav.container button:hover{
     background-color: rgb(1, 170, 196);
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -91,7 +90,6 @@ main.container {
     flex: 1; 
 }
 
-
 /* ========= MAIN CONTENT - Left Column =========== */
 
 /* ============= Name Card ============ */
@@ -106,7 +104,6 @@ main.container {
     overflow: visible;
 }
 
-
 .banner>img {
     height: 100px;
     border-radius: 50%;
@@ -114,7 +111,6 @@ main.container {
     margin-top: 10px;
     margin-left: 10px;
 }
-
 
 #name-content {
     margin-left: 1rem;
@@ -145,11 +141,7 @@ main.container {
 .card  {
     background-color: #fff;
     border: solid 2px black;
-
 }
-
-
-
 
 /* ========= General Card - Left Column Specific======= */
 
@@ -169,6 +161,7 @@ main.container {
     margin-top: 1rem;
     font-size: 1.2rem;
 }
+
 .location-date {
     margin-top: .4rem;
     margin-bottom: .4rem;
@@ -207,6 +200,9 @@ main.container {
     font-size: 12px;
 }
 
+
+/*=================Persons=======================*/
+
 .persons, .person-line-left {
     display: flex;
     align-items: center;
@@ -230,7 +226,7 @@ main.container {
     display: flex;
     gap: 5px;
 }
-
+/* ============Person Request Buttons============= */
 .person-line-right button{
     color: white;
     font-size: 10px;
@@ -244,6 +240,7 @@ main.container {
 button.request-deny {
     background-color: rgb(200, 0, 0); 
 }
+
 button.request-deny:hover {
     background-color: rgb(254, 2, 2); 
 }
@@ -251,6 +248,7 @@ button.request-deny:hover {
 button.request-accept {
     background-color: rgb(17, 141, 19); 
 }
+
 button.request-accept:hover {
     background-color: rgb(19, 201, 23); 
 }
@@ -258,6 +256,10 @@ button.request-accept:hover {
 footer{
     border-top: solid 1px black;
     padding-top: .25rem;
+}
+
+footer a:hover {
+    color: crimson;
 }
 
 
