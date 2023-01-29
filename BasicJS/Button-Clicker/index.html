@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header class="container">
+        <h1>Dojonary</h1>
+        <input type="search" id="site-search" name="site-search" placeholder="Search">
+        <button id="login-logout" onclick="logClick(this)">Login</button>
+    </header>
+    <div class="container">
+        <div class="left-column">
+            <div class="card">
+                <div class="card-left">
+                    <h2 class="entry">ninja</h2>
+                    <p><i>noun</i></p>
+                    <p>Plural: <i>ninjas</i></p>
+                    <button onclick="likeAlert(this)">13 likes</button>
+                </div>
+                <div class="card-right">
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">Ninjitsu</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-left">
+                    <h2>ninja</h2>
+                    <p>noun</p>
+                    <p>Plural: ninjas</p>
+                    <button onclick="likeAlert(this)">37 likes</button>
+                </div>
+                <div class="card-right">
+                    <p>A <a href="#">programer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="card"><p>Dojonary is defined by <strong>YOU</strong></p>
+                <button onclick="remove(this)">Add Definition</button></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
