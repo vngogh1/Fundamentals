@@ -6,9 +6,9 @@ function myFunction(element) {
     console.log('Button engaged!');
     totalLikes++;
     if (totalLikes === 1) {
-        document.querySelector('#likeCount').innerText=('1 like')
+        document.querySelector('#likeCount').innerText=('1 like');
     } else {
-        document.querySelector('#likeCount').innerText=(totalLikes + ' likes')
+        document.querySelector('#likeCount').innerText=(totalLikes + ' likes');
     }
 
 }
