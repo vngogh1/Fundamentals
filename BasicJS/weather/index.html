@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>DojoWeather</h1>
+            <nav>
+                <a onclick="displayAlert(this)" href="#">Burbank</a>
+                <a onclick="displayAlert(this)" href="#">Chicago</a>
+                <a onclick="displayAlert(this)" href="#">Dallas</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="banner">
+            <h2 class="city-name">San Jose</h2>
+            <div class="temp-units">
+                <label for="temp-units-selector">show temperature in</label>
+                <select onchange="updateTemperatures(this)" name="temp-units-selector" id="temp-units-selector">
+                    <option value="celcius">C°</option>
+                    <option value="farenhiet">F°</option>
+                </select>
+            </section>
+        </div>
+        <section class="card-container">
+            <div class="card">
+                <h3>Today</h3>
+                <img src="images/some_rain.png" alt="rain">
+                <p class="forecast">some rain</p>
+                <div class="temperatures">
+                    <p class="temp-left"><span class="temp-number">24</span>°</p>
+                    <p class="temp-right"><span class="temp-number">18</span>°</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Tomorrow</h3>
+                <img src="images/some_sun.png" alt="sun">
+                <p class="forecast">some sun</p>
+                <div class="temperatures">
+                    <p class="temp-left"><span class="temp-number">27</span>°</p>
+                    <p class="temp-right"><span class="temp-number">19</span>°</p>
+                </div>
+            </div>           
+            <div class="card">
+                <h3>Friday</h3>
+                <img src="images/some_clouds.png" alt="clouds">
+                <p class="forecast">some clouds</p>
+                <div class="temperatures">
+                    <p class="temp-left"><span class="temp-number">21</span>°</p>
+                    <p class="temp-right"><span class="temp-number">16</span>°</p>
+                </div>
+            </div>           
+            <div class="card">
+                <h3>Saturday</h3>
+                <img src="images/some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="temperatures">
+                    <p class="temp-left"><span class="temp-number">26</span>°</p>
+                    <p class="temp-right"><span class="temp-number">21</span>°</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="pop-up"class="container">
+        <img src="images/cookie.png" alt="cookies" class="icon">
+        <div class="pop-up-message">
+            <h5>Stop! Cookie time</h5>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#"">Read more...</a></p> 
+        </div>
+        <button onclick="eatCookies(this)">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
