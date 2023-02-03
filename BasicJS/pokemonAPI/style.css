@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/* =======================RESET=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    background-color: #f9fafb;
+}
+
+
+button {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    background-color: #3761a8;
+    color:#feca1b;
+    border-radius: 5px;
+}
+
+input {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+header {
+    border-bottom: solid 1px #000;
+    height: 80px; 
+    display: flex;
+    justify-content: center;
+}
+.header-wrap {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+    
+}
+h1 {
+    text-transform: capitalize;
+    font-family: 'Rock Salt', cursive;
+    
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#pokeDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.card {
+    width: 100px;
+    margin: 5px;
+    border: solid 5px #3761a8;
+    border-radius: 10px;
+    display:inline-block;
+    background-color: #feca1b;
+    box-shadow: 5px 7px 13px -4px rgba(0,0,0,0.33);
+
+    
+}
+.card p{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #da3518;
+    padding: 5px 0;
+    text-transform: capitalize;
+    
+    
+}
+
+#randButton {
+    background-color: #da3518;
+    width: 50px;
+    color: #fff;
+}
+#hidden {
+    display: none;
+}
